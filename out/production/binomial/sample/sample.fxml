@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="textField1" layoutX="30.0" layoutY="30.0" prefHeight="25.0" prefWidth="97.0" />
+      <TextField fx:id="textField2" layoutX="144.0" layoutY="30.0" onMouseClicked="#setTextField2" prefHeight="25.0" prefWidth="40.0" />
+      <ComboBox fx:id="comboBox" layoutX="207.0" layoutY="30.0" onAction="#setComboBox" prefWidth="150.0" promptText="Full Expression" />
+      <Button layoutX="372.0" layoutY="30.0" mnemonicParsing="false" onAction="#calc" text="Calculate" />
+      <HBox fx:id="Hbox" alignment="TOP_CENTER" cacheShape="false" centerShape="false" fillHeight="false" layoutX="30.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="25.0" prefWidth="580.0" scaleShape="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <ComboBox fx:id="limit1" disable="true" layoutX="453.0" layoutY="30.0" onMouseClicked="#setlimit1" prefWidth="55.0" />
+      <ComboBox fx:id="limit2" disable="true" layoutX="545.0" layoutY="30.0" onMouseClicked="#setlimit2" prefWidth="55.0" />
+      <Label fx:id="label" layoutX="514.0" layoutY="16.0">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="6.0" text="Expression" />
+      <Label layoutX="148.0" layoutY="6.0" text="Power" />
+      <Label layoutX="241.0" layoutY="6.0" text="Selection Mode" />
+      <Label layoutX="481.0" layoutY="6.0" text="Term/Range" />
+   </children>
+</AnchorPane>
